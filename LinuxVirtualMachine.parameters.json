@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "uksouth"
+        },
+      "virtualMachineName": {
+        "value": "edo-vml-xxx-xxx"
+      },
+        "virtualMachineSize": {
+            "value": "Standard_A2_v2"
+        },
+        "adminUsername": {
+            "value": "operations"
+        },
+        "virtualNetworkName": {
+            "value": "eduprodvnetUK"
+        },
+        "networkInterfaceName": {
+            "value": "edo-vml-xxx-xxx26"
+        },
+        "networkSecurityGroupName": {
+            "value": "NSG_RGTEMPLATENAME"
+        },
+        "adminPassword": {
+            "value": "Password123!"
+        },
+        "availabilitySetName": {
+            "value": "AV_RGTEMPLATENAME"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "5"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "sargtemplatenamediag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/sargtemplatenamediag"
+        },
+        "subnetName": {
+            "value": "LinuxWebServices_subnet"
+        }
+    }
+}
